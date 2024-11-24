@@ -46,15 +46,10 @@ namespace DesignPattern
             //-------------------------------------------------------------------------------
             //StrategyDesign Pattern Head First
             Duck model = new DuckModel();
-           
-            
-           model.PerformQuack();
-
-
-            model.SetQuackBehavior(new Quack());
-
             model.PerformQuack();
-           
+            model.SetQuackBehavior(new Quack());
+            model.PerformQuack();
+
 
         }
     }

@@ -11,6 +11,7 @@ namespace StrategyPatternHeadFirst
     {
         public DuckModel()
         {
+            //Create instance in parent class
             FlyBehavior = new FlywithWings();
             QuackBehavior = new MuteQuack();
         }

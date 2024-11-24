@@ -9,6 +9,7 @@ namespace StrategyPatternHeadFirst
 
         public Duck() { }
 
+        //Display method is abstract since all subtypes looks different
         public abstract void Display();
 
         public void PerformFly()
@@ -26,11 +27,13 @@ namespace StrategyPatternHeadFirst
             Console.WriteLine("All ducks float, even decoys!");
         }
 
+        //set dynamically behaviour at run time
         public void SetFlyBehavior(IFlyBehaviour fb)
         {
             FlyBehavior = fb;
         }
 
+        //set dynamically behaviour at run time
         public void SetQuackBehavior(IQuackBehaviour qb)
         {
             QuackBehavior = qb;
