@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using Strategy;
 using StrategyPatternHeadFirst;
 using StrategyPatternHeadFirst.Interface;
+using ObserverPatternHeadFirst;
 
 
 namespace DesignPattern
@@ -45,12 +46,21 @@ namespace DesignPattern
 
             //-------------------------------------------------------------------------------
             //StrategyDesign Pattern Head First
-            Duck model = new DuckModel();
-            model.PerformQuack();
-            model.SetQuackBehavior(new Quack());
-            model.PerformQuack();
+            //Duck model = new DuckModel();
+            //model.PerformQuack();
+            //model.SetQuackBehavior(new Quack());
+            //model.PerformQuack();
 
+            //-----------------------------------------------------------------------------
+            //Observer DesignPattern Head First
 
+            WeatherData weatherData = new WeatherData();
+            CurrentConditionsDisplay currentDisplay =
+ new CurrentConditionsDisplay(weatherData);
+            weatherData.setMeasurements(80, 65, 30.4f);
+            weatherData.setMeasurements(82, 70, 29.2f);
+
+            Console.ReadKey();
         }
     }
 }
