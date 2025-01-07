@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbstractFactory\AbstractFactory.csproj" />
+    <ProjectReference Include="..\DecoratorPattern_HeadFirst\DecoratorPattern_HeadFirst.csproj" />
     <ProjectReference Include="..\ObserverPatternHeadFirst\ObserverPatternHeadFirst.csproj" />
     <ProjectReference Include="..\StrategyPatternHeadFirst\StrategyPatternHeadFirst.csproj" />
     <ProjectReference Include="..\Strategy\Strategy.csproj" />
